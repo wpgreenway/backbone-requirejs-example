@@ -6,6 +6,7 @@ define(function(require) {
     var MyModel = Backbone.Model.extend({
         doSomething: function() {
             console.log('My model is doing something!');
+            $('#error-div').hide();
             var successDiv = $('#success-div');
             successDiv.html('If you can see this, it works!');
             successDiv.show();
